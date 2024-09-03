@@ -20,7 +20,7 @@ A simple and efficient To-Do List application to help users organize their daily
 - **Bootstrap**: Responsive design and styling
 - **JavaScript & jQuery**: Client-side operations
 - **SQL Server**: Database management
-- **Docker : Containerization for consistent deployment environments
+- **Docker** : Containerization for consistent deployment environments
 - **Azure Web App**: Cloud hosting and deployment
 
 ## Project Structure
