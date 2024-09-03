@@ -45,8 +45,9 @@ https://app.azure.com/8dea6e82-dd6d-4d8a-8888-8e2a11105644/subscriptions/6a7b829
 
 And Docker Images on here.
 
-https://hub.docker.com/repository/docker/uricaryn1/todolistapp/.
-https://hub.docker.com/repository/docker/uricaryn1/sqlserver/.
+https://hub.docker.com/repository/docker/uricaryn1/todolistapp/
+
+https://hub.docker.com/repository/docker/uricaryn1/sqlserver/
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
