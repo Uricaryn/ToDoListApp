@@ -39,14 +39,14 @@ Deploy to Server: Deploy to a web server (e.g., IIS, Azure).
 Configure Database: Set up the SQL Server and update the connection string in appsettings.json.
 Run the Application: Ensure all services are running correctly on the server.
 
-Also you can find the project as a webapp on here
+Also you can find the project as a webapp on here.
 
 https://app.azure.com/8dea6e82-dd6d-4d8a-8888-8e2a11105644/subscriptions/6a7b8297-bf3c-4d24-8660-e063894be033/resourceGroups/mygroup/providers/Microsoft.Web/sites/todolist?utm_source=Portal
 
-And Docker Images on here
+And Docker Images on here.
 
-https://hub.docker.com/repository/docker/uricaryn1/todolistapp/
-https://hub.docker.com/repository/docker/uricaryn1/sqlserver/
+https://hub.docker.com/repository/docker/uricaryn1/todolistapp/.
+https://hub.docker.com/repository/docker/uricaryn1/sqlserver/.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
