@@ -29,39 +29,24 @@ A simple and efficient To-Do List application to help users organize their daily
 - **Data**: Contains DbContext and configuration settings for database and identity management.
 - **wwwroot**: Stores static files such as CSS, JavaScript, and images.
 
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Uricaryn/TodoListApp.git
-
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd todo-list-app
-
-   ## Build and Run the Project
-
-Run the following commands to build and run the project:
-
-```bash
-dotnet build
-dotnet run
 
 Distribution
 To distribute the application:
-
 Build the Application: Use Visual Studio or .NET CLI.
 Deploy to Server: Deploy to a web server (e.g., IIS, Azure).
 Configure Database: Set up the SQL Server and update the connection string in appsettings.json.
 Run the Application: Ensure all services are running correctly on the server.
+
+Also you can find the project as a webapp on here
+https://app.azure.com/8dea6e82-dd6d-4d8a-8888-8e2a11105644/subscriptions/6a7b8297-bf3c-4d24-8660-e063894be033/resourceGroups/mygroup/providers/Microsoft.Web/sites/todolist?utm_source=Portal
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contact
 For any questions or feedback, please reach out to your.email@example.com.
+
+
 
 
    
