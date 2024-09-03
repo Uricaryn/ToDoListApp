@@ -1,0 +1,54 @@
+﻿@model ToDoListApp1.Models.VMs.LoginVM
+
+@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    .input-lg {
+        width: 100%; /* Genişlik tam genişlikte olacak şekilde ayarlandı */
+        padding: 10px; /* İç boşluklar artırıldı */
+        font-size: 1.2rem; /* Yazı boyutu büyütüldü */
+    }
+
+    .btn-lg {
+        width: 100%; /* Buton genişliği de tam genişlikte olacak şekilde ayarlandı */
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+</style>
+
+<h1>To Do List</h1>
+
+<h4>User Sign In</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control input-lg" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control input-lg" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign In" class="btn btn-primary btn-lg" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

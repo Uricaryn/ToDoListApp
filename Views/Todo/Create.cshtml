@@ -1,0 +1,68 @@
+﻿@model ToDoListApp1.Models.VMs.ToDoCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    .input-lg {
+        width: 100%; /* Genişlik tam genişlikte olacak şekilde ayarlandı */
+        padding: 10px; /* İç boşluklar artırıldı */
+        font-size: 1.2rem; /* Yazı boyutu büyütüldü */
+    }
+
+    .btn-lg {
+        width: 100%; /* Buton genişliği de tam genişlikte olacak şekilde ayarlandı */
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+</style>
+
+<div class="container mt-5">
+    <main role="main" class="pb-3">
+        <h1 class="text-center">Create</h1>
+        <hr class="mb-4" />
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form asp-action="Create" class="p-4 shadow-sm rounded bg-light">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control input-lg" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Status" class="control-label"></label>
+                        <select asp-for="Status" class="form-select input-lg">
+                            <option value="0">Completed</option>
+                            <option value="1">Ongoing</option>
+                            <option value="2">Planned</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Description" class="control-label"></label>
+                        <textarea asp-for="Description" class="form-control input-lg"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="ReminderDate" class="control-label"></label>
+                        <input asp-for="ReminderDate" class="form-control input-lg" type="datetime-local"/>
+                        <span asp-validation-for="ReminderDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" value="Create" class="btn btn-primary btn-lg w-100" />
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

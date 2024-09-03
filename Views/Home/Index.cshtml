@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .welcome-container {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        padding: 20px; /* Padding around the content */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        display: inline-block; /* Make the container width fit its content */
+        max-width: 600px; /* Optional max-width to constrain the container */
+        margin-top: 50px; /* Top margin to provide space from the top of the page */
+    }
+
+        .welcome-container h1 {
+            font-size: 3rem; /* Larger font size for the welcome message */
+            color: #333; /* Darker color for the text */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .welcome-container p {
+            font-size: 1.25rem; /* Slightly larger font size for the paragraph */
+            color: #555; /* Medium gray color for the paragraph text */
+        }
+
+        .welcome-container a {
+            color: #007bff; /* Link color (Bootstrap primary color) */
+            text-decoration: underline; /* Underline the link */
+        }
+
+            .welcome-container a:hover {
+                color: #0056b3; /* Darker shade on hover */
+                text-decoration: none; /* Remove underline on hover */
+            }
+</style>
+
+<div class="text-center">
+    <div class="welcome-container">
+        <h1 class="display-4">Welcome</h1>
+        <p>
+            <a href="https://docs.microsoft.com/aspnet/core" target="_blank">
+                <img src="~/images/todolist.gif" alt="ASP.NET Core Logo" style="max-width: 100%; height: auto;" />
+            </a>
+        </p>
+    </div>
+</div>

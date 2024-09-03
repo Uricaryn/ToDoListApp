@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<style>
+    .privacy-container {
+        background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+        padding: 20px; /* Padding around the content */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        display: inline-block; /* Make the container width fit its content */
+        max-width: 800px; /* Optional max-width to constrain the container */
+        margin-top: 50px; /* Top margin to provide space from the top of the page */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .privacy-container h1 {
+        font-size: 2.5rem; /* Larger font size for the heading */
+        color: #333; /* Darker color for the text */
+        margin-bottom: 20px; /* Space below the heading */
+    }
+
+    .privacy-container p {
+        font-size: 1.25rem; /* Slightly larger font size for the paragraph */
+        color: #555; /* Medium gray color for the paragraph text */
+    }
+</style>
+
+<div class="text-center">
+    <div class="privacy-container">
+        <h1>@ViewData["Title"]</h1>
+        <p>Use this page to detail your site's privacy policy.</p>
+    </div>
+</div>
