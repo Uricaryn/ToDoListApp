@@ -49,8 +49,6 @@ https://hub.docker.com/repository/docker/uricaryn1/todolistapp/
 
 https://hub.docker.com/repository/docker/uricaryn1/sqlserver/
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contact
 For any questions or feedback, please reach out to onuranatca@hotmail.com.tr
