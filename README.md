@@ -53,7 +53,4 @@ https://hub.docker.com/repository/docker/uricaryn1/sqlserver/
 Contact
 For any questions or feedback, please reach out to onuranatca@hotmail.com.tr
 
-
-
-
-   
+This project is licensed under the MIT License. For more details, please see the LICENSE.txt file.
